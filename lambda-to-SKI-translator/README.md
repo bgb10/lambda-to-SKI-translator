@@ -1,23 +1,36 @@
-#  Class LambdaExpressionTranslator
+# Class LambdaExpressionTranslatorInterface
+
+## Description
+
+Get user Input for the `LambdaExpressionTranslator`.
+
+Show functional-language like interface. 
+
+## member variables
+
+## member functions
+
+- LambdaExpressionTranslatorInterface(LambdaExpressionTranslator&)
+
+- public void GetInput()
+
+# Class LambdaExpressionTranslator
 
 ## Description
 
 Manages all the `LambdaExpression` objects, and translates `LambdaExpression` objects to another expression (e.g. original lambda(denoted \) Expression, SKI Expression)
 
-Also, enters user inputs to perform upper content.
-
 ## member variables
 
-### vector<LambdaExpression> m_lambda_expression_list
+- private vector<LambdaExpression> m_lambda_expression_list
 
 ## member functions
 
-### string ToSKIExpression(LambdaExpression)
+- LambdaExpressionTranslator()
 
-### string ToOriginalLambdaExpression(LambdaExpression)
+- public string ToSKIExpression(LambdaExpression)
 
-### getUserInput()
-
+- public string ToOriginalLambdaExpression(LambdaExpression)
 
 # Class LambdaExpression
 
@@ -27,19 +40,19 @@ Definition of Lambda Expression.
 
 ## member variables
 
-### name
+- private string name
 
 ## member functions
 
-### LambdaExpression()
+- LambdaExpression()
 
-### LambdaExpression(string)
+- LambdaExpression(string)
 
-### Print()
+- public void Print()
 
-### Concatenate()
+- public void Concatenate()
 
-### GetName()
+- public string GetName()
 
 <!--
 ##  Lambda expression Definition
